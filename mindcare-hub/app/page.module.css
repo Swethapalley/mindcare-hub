@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e6f2ff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e88e5;
+  color: white;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.navLink:hover {
+  opacity: 0.8;
+}
+
+.loginButton {
+  background-color: #ffffff;
+  color: #1e88e5;
+}
+
+.registerButton {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.heroContent {
+  flex: 1;
+}
+
+.heroContent h2 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.heroImage {
+  flex: 1;
+}
+
+.heroImage img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton {
+  background-color: #1e88e5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrowIcon {
+  margin-left: 0.25rem;
+}
+
+.features {
+  margin-top: 3rem;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0d47a1;
+  margin-bottom: 2rem;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.featureCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard h3 {
+  color: #1e88e5;
+  margin-bottom: 0.75rem;
+}
+
+.featureCard p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

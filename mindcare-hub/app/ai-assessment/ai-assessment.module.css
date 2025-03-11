@@ -1,0 +1,181 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: #1e88e5;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.assessmentForm {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #e3f2fd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.disclaimer svg {
+  color: #1e88e5;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.disclaimer p {
+  margin: 0;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.textArea,
+.select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.textArea:focus,
+.select:focus {
+  outline: none;
+  border-color: #1e88e5;
+}
+
+.submitButton {
+  background-color: #1e88e5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.assessmentResult {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.resultHeader svg {
+  color: #1e88e5;
+}
+
+.resultHeader h2 {
+  margin: 0;
+  color: #333;
+}
+
+.resultContent {
+  margin-bottom: 1.5rem;
+}
+
+.resultContent p {
+  color: #333;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.recommendation {
+  background-color: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.recommendation h3 {
+  color: #2e7d32;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.recommendation p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.findButton {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.resultFooter {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.resultFooter p {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .assessmentForm,
+  .assessmentResult {
+    padding: 1.5rem;
+  }
+}
+

@@ -1,0 +1,200 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: #1e88e5;
+  margin: 0;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #1e88e5;
+  color: white;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.emptyIcon {
+  color: #1e88e5;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.emptyState h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.emptyState p {
+  color: #666;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.recordsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recordCard {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.recordHeader {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.recordHeader:hover {
+  background-color: #f9f9f9;
+}
+
+.recordDate {
+  flex: 1;
+}
+
+.recordDate h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.recordDate p {
+  margin: 0.25rem 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.recordDiagnosis {
+  margin-right: 1.5rem;
+}
+
+.recordDiagnosis span {
+  background-color: #e3f2fd;
+  color: #1e88e5;
+  padding: 0.35rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+}
+
+.expandButton {
+  padding: 0.5rem;
+  color: #666;
+}
+
+.recordDetails {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.recordSection {
+  margin-top: 1.5rem;
+}
+
+.recordSection h4 {
+  color: #333;
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.recordSection p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.medicationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.medicationItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.medicationName {
+  font-weight: 500;
+  color: #333;
+}
+
+.medicationDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.medicationFrequency {
+  color: #1e88e5;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.2rem;
+  color: #1e88e5;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .recordHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .recordDiagnosis {
+    margin-right: 0;
+  }
+
+  .expandButton {
+    align-self: center;
+  }
+
+  .medicationItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
